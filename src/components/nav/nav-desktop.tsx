@@ -19,8 +19,7 @@ const NavDesktop = () => {
           scrollDirection == "up"
             ? "var(--color-background)"
             : "rgba(0,0,0,0.1)",
-        backdropFilter: scrollDirection == "up" ? "" : "blur(10px)",
-        fontSize: scrollDirection == "up" ? "1rem" : "0.8rem",
+        backdropFilter: scrollDirection == "up" ? "blur(0px)" : "blur(10px)",
       }}
       transition={{
         ease: "backInOut",
@@ -37,6 +36,7 @@ const NavDesktop = () => {
         className="flex gap-8 items-center justify-evenly text-amber-50"
         animate={{
           padding: scrollDirection == "up" ? "1.5rem 2rem" : "1rem 2rem",
+          fontSize: scrollDirection == "up" ? "1rem" : "0.8rem",
         }}
       >
         <li className="mr-auto">Shubham Kalra</li>
