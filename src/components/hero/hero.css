@@ -1,0 +1,46 @@
+
+.image-border-out {
+    position: relative;
+    padding: 1.5rem;
+}
+
+.image-border-out::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    background: linear-gradient(140deg, var(--color-primary),  var(--color-accent)) border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+}
+
+.image-border{
+    position: relative;
+}
+
+.image-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 100%;
+    border: 5px solid transparent;
+    background: linear-gradient(140deg, var(--color-accent), var(--color-primary)) border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+}
+
+.bg-animation {
+    background-size: 200%;
+    animation: animate ease-in 2s infinite alternate-reverse;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0% 0%;
+    }
+
+    100%{
+        background-position: 100% 100%;
+    }
+}

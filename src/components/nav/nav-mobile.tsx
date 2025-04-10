@@ -37,7 +37,7 @@ const NavMobile = () => {
 
   return (
     <motion.nav
-      className="relative  h-16 z-20 text-amber-50 bg-background"
+      className="relative  h-16  text-amber-50 bg-background"
     >
       <ul className="py-4 px-4 flex items-center justify-between text-lg">
         <li>SK</li>
