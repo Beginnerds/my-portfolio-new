@@ -3,16 +3,18 @@ import { useState } from "react";
 
 const NavDesktop = () => {
   const { scrollY } = useScroll();
+  const [scrollYValue,setScrollYvalue] = useState(scrollY.get())
   const [scrollDirection, setScrollDirection] = useState<"down" | "up">("up");
 
   useMotionValueEvent(scrollY, "change", (current) => {
     const diff = current - (scrollY.getPrevious() || 0);
     setScrollDirection(diff > 0 ? "down" : "up");
+    setScrollYvalue(current)
   });
 
   return (
     <motion.nav
-      className="w-full"
+      className="w-full h-16"
       initial={false}
       animate={{
         backgroundColor:
@@ -28,16 +30,16 @@ const NavDesktop = () => {
       <motion.div
         className="absolute -bottom-[1px] h-[1px] w-full bg-linear-0 from-accent to-primary"
         animate={{
-          scaleX: scrollDirection == "up" ? 0 : 1,
+          scaleX: scrollYValue == 0 ? 0 : 1,
           originX: 0,
         }}
       />
       <motion.ul
-        className="flex gap-8 items-center justify-evenly text-amber-50"
+        className="h-full flex gap-8 items-center justify-evenly text-amber-50 px-8"
         initial={false}
         animate={{
-          padding: scrollDirection == "up" ? "1.5rem 2rem" : "1rem 2rem",
-          fontSize: scrollDirection == "up" ? "1rem" : "0.8rem",
+          // padding: scrollYValue == 0 ? "1.5rem 2rem" : "1rem 2rem",
+          fontSize: scrollYValue == 0 ? "1rem" : "0.8rem",
         }}
       >
         <li className="mr-auto">Shubham Kalra</li>

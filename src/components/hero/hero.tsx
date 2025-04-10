@@ -86,7 +86,7 @@ const Hero = () => {
   };
 
   return (
-    <div className=" w-full py-12 grid grid-cols-1 md:grid-cols-2 gap-8  text-amber-50 justify-items-center md:items-center md:justify-items-start">
+    <div className=" w-full min-h-[calc(100vh-4rem)]  pb-16 grid grid-cols-1 md:grid-cols-2 gap-8  text-amber-50 justify-items-center md:items-center md:justify-items-start">
       <motion.div
         variants={sectionOneVariants}
         initial="hidden"
