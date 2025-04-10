@@ -34,6 +34,7 @@ const NavDesktop = () => {
       />
       <motion.ul
         className="flex gap-8 items-center justify-evenly text-amber-50"
+        initial={false}
         animate={{
           padding: scrollDirection == "up" ? "1.5rem 2rem" : "1rem 2rem",
           fontSize: scrollDirection == "up" ? "1rem" : "0.8rem",
