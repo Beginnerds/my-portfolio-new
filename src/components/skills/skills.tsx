@@ -156,10 +156,13 @@ const Skills = () => {
 
   return (
     <motion.section
-      className="w-full text-amber-50 mt-4"
+      className="w-full text-amber-50 max-md:text-center"
       variants={containerVariants}
       initial={"initial"}
       whileInView={"visible"}
+      viewport={{
+        amount:0.3
+      }}
     >
       <motion.h3
         id="skills"
@@ -171,7 +174,7 @@ const Skills = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <motion.div
           variants={iconContainerOneVariants}
-          className="gradient-border mt-8 bg-primary/5 py-16 px-8 drop-shadow-2xl shadow-2xl shadow-primary/25"
+          className="gradient-border mt-8 bg-primary/5 py-16 px-2 md:px-8 drop-shadow-2xl shadow-2xl shadow-primary/25"
         >
           <h4 className="block text-center text-xl font-semibold tracking-wide leading-8">
             Programming Languages
@@ -200,7 +203,7 @@ const Skills = () => {
         </motion.div>
         <motion.div
           variants={iconContainerTwoVariants}
-          className="gradient-border mt-8 bg-primary/5 py-16 px-8 drop-shadow-2xl shadow-2xl shadow-primary/25"
+          className="gradient-border mt-8 bg-primary/5 py-16 px-2 md:px-8 drop-shadow-2xl shadow-2xl shadow-primary/25"
         >
           <h4 className="block text-center text-xl font-semibold tracking-wide leading-8">
             Tools & Technologies

@@ -128,7 +128,7 @@ const Hero = () => {
             y: -5,
             scale: 1.2,
           }}
-          href="#hireme"
+          href="https://www.upwork.com/freelancers/shubhamkalra4"
           target="_blank"
           className="mt-8 inline-block bg-linear-120 from-[#108a01] to-accent    p-5 rounded-full shadow-lg shadow-primary/25 bg-animation"
         >

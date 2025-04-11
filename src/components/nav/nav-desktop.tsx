@@ -58,7 +58,7 @@ const NavDesktop = () => {
         </li>
         <li>
           <a
-            href="#hireme"
+            href="https://www.upwork.com/freelancers/shubhamkalra4"
             target="_blank"
             className="bg-[#108a01] filter transition-all hover:brightness-75 px-3 py-2 rounded-md shadow"
           >
