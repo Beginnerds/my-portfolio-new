@@ -37,7 +37,7 @@ const Card: React.FC<CardProps> = ({ data }) => {
           }}
           href={data.liveUrl}
           target="_blank"
-          className="w-full inline-block bg-linear-120 from-[#108a01] to-accent text-sm md:text-base px-3 py-5 md:px-5 rounded-full shadow-lg shadow-primary/25 font-medium text-center cursor-pointer bg-animation"
+          className="w-full inline-block bg-linear-120 from-[#108a01] to-accent text-xs sm:text-sm md:text-base px-3 py-5 md:px-5 rounded-full shadow-lg shadow-primary/25 font-medium text-center cursor-pointer bg-animation"
         >
           Live Preview
         </motion.a>
@@ -48,7 +48,7 @@ const Card: React.FC<CardProps> = ({ data }) => {
             }}
             href={data.githubUrl}
             target="_blank"
-            className="w-full inline-block border border-amber-50 text-sm md:text-base px-3 py-5 md:px-5 rounded-full font-medium text-center cursor-pointer bg-animation"
+            className="w-full inline-block border border-amber-50 text-xs sm:text-sm md:text-base px-3 py-5 md:px-5 rounded-full font-medium text-center cursor-pointer bg-animation"
           >
             Visit Github
           </motion.a>

@@ -1,7 +1,7 @@
 import { AnimationProps, motion } from "motion/react";
 import Card, { CardProps } from "./card";
 
-import ImageNB from "../../assets/thumb_nb.png"
+import ImageNB from "../../assets/thumb_nb.webp"
 import ImageBB from "../../assets/thumb_bb.webp"
 import ImageNBDash from "../../assets/thumb_nb_dash.webp"
 import ImageSV from "../../assets/thumb_sv.webp"

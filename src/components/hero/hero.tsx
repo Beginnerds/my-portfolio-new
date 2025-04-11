@@ -1,8 +1,11 @@
 import { AnimationProps, motion } from "motion/react";
-import MyPicture from "../../assets/me.png";
+import MyPicture from "../../assets/me.webp";
 import "./hero.css";
+import { useState } from "react";
 
 const Hero = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   const sectionOneVariants: AnimationProps["variants"] = {
     hidden: {
       x: -50,
@@ -86,7 +89,10 @@ const Hero = () => {
   };
 
   return (
-    <section id='home' className=" w-full min-h-[calc(100vh-4rem)]  pb-16 grid grid-cols-1 md:grid-cols-2 gap-8  text-amber-50 justify-items-center md:items-center md:justify-items-start">
+    <section
+      id="home"
+      className=" w-full min-h-[calc(100vh-4rem)]  pb-16 grid grid-cols-1 md:grid-cols-2 gap-8  text-amber-50 justify-items-center md:items-center md:justify-items-start"
+    >
       <motion.div
         variants={sectionOneVariants}
         initial="hidden"
@@ -139,13 +145,22 @@ const Hero = () => {
       {/* image column  */}
 
       <div className="max-md:order-none md:justify-self-end h-[240px] md:h-[320px] w-[240px] md:w-[320px] image-border-out">
-        <div className="image-border shadow-lg shadow-primary/30 rounded-full">
+        <motion.div
+          className="image-border shadow-lg shadow-primary/30 rounded-full"
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: imageLoaded ? 1 : 0,
+          }}
+        >
           <img
+            onLoad={() => setImageLoaded(true)}
             src={MyPicture}
             alt="shubham_kalra_picture"
             className=" h-full w-full object-cover"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
