@@ -2,6 +2,7 @@ import "./App.css";
 import About from "./components/about/about";
 import Hero from "./components/hero/hero";
 import Nav from "./components/nav/nav";
+import Projects from "./components/projects/projects";
 import Skills from "./components/skills/skills";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Hero />
             <Skills />
             <About/>
+            <Projects/>
           </div>
         </main>
       </div>

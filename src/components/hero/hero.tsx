@@ -86,7 +86,7 @@ const Hero = () => {
   };
 
   return (
-    <div className=" w-full min-h-[calc(100vh-4rem)]  pb-16 grid grid-cols-1 md:grid-cols-2 gap-8  text-amber-50 justify-items-center md:items-center md:justify-items-start">
+    <section id='home' className=" w-full min-h-[calc(100vh-4rem)]  pb-16 grid grid-cols-1 md:grid-cols-2 gap-8  text-amber-50 justify-items-center md:items-center md:justify-items-start">
       <motion.div
         variants={sectionOneVariants}
         initial="hidden"
@@ -139,7 +139,7 @@ const Hero = () => {
       {/* image column  */}
 
       <div className="max-md:order-none md:justify-self-end h-[240px] md:h-[320px] w-[240px] md:w-[320px] image-border-out">
-        <div className="image-border shadow-lg shadow-primary/25 rounded-full">
+        <div className="image-border shadow-lg shadow-primary/30 rounded-full">
           <img
             src={MyPicture}
             alt="shubham_kalra_picture"
@@ -147,7 +147,7 @@ const Hero = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

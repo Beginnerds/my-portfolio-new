@@ -39,10 +39,6 @@ const icons1: Icon[] = [
     icon: TSIcon,
   },
   {
-    title: "Typescript",
-    icon: TSIcon,
-  },
-  {
     title: "React",
     icon: ReactIcon,
   },
