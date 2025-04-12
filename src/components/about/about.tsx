@@ -53,7 +53,8 @@ const About = () => {
       initial={"initial"}
       whileInView={"visible"}
       viewport={{
-        amount: 0.3,
+        amount: 0.15,
+        once:true
       }}
     >
       <motion.h3
