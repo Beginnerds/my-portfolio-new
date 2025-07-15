@@ -12,6 +12,8 @@ import MongooseIcon from "../../assets/icon_mongoose.svg";
 import GithubIcon from "../../assets/icon_github.svg";
 import VSCodeIcon from "../../assets/icon_vscode.svg";
 import DockerIcon from "../../assets/icon_docker.svg";
+import AWSIcon from "../../assets/icon_aws.svg";
+import FirebaseIcon from "../../assets/icon_firebase.svg";
 
 import "./skills.css";
 import { AnimationProps, motion } from "motion/react";
@@ -80,6 +82,14 @@ const icons2: Icon[] = [
   {
     title: "Docker",
     icon: DockerIcon,
+  },
+  {
+    title: "AWS",
+    icon: AWSIcon,
+  },
+  {
+    title: "Firebase",
+    icon: FirebaseIcon,
   },
 ];
 
@@ -215,12 +225,12 @@ const Skills = () => {
                 variants={iconsVariants}
                 title={item.title}
                 className=" flex flex-col justify-center items-center flex-wrap gap-1"
-                style={{
-                  width:
-                    i == icons2.length - 1 && icons2.length % 2 != 0
-                      ? "100%"
-                      : "",
-                }}
+                // style={{
+                //   width:
+                //     i == icons2.length - 1 && icons2.length % 2 != 0
+                //       ? "100%"
+                //       : "",
+                // }}
               >
                 <img
                   className="size-16"

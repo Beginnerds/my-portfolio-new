@@ -5,6 +5,8 @@ import ImageNB from "../../assets/thumb_nb.webp";
 import ImageBB from "../../assets/thumb_bb.webp";
 import ImageNBDash from "../../assets/thumb_nb_dash.webp";
 import ImageSV from "../../assets/thumb_sv.webp";
+import ImageAdminPanelDemo  from "../../assets/thumb_admin_panel.png"
+import ImageYummi  from "../../assets/thumb_restaurant.png"
 
 const projectData: CardProps["data"][] = [
   {
@@ -13,6 +15,22 @@ const projectData: CardProps["data"][] = [
     description:
       "A modern blog website built with Next.js, featuring Server-Side Rendering (SSR) for improved SEO, full authentication support for secure access, and a clean, fully customizable UI powered by shadcn.",
     liveUrl: "https://nestedblock.com",
+  },
+  {
+    title: "Admin Panel - Ecommerce",
+    imageUrl: ImageAdminPanelDemo,
+    description:
+      "Demo admin panel for an ecommerce website, designed to help admins manage products, view and process orders, track customer activity, and monitor store performance through a clean interface.",
+    liveUrl: "https://next-js-admin-panel-demo.vercel.app/",
+    githubUrl:"https://github.com/Beginnerds/NextJS-Admin-Panel-Demo"
+  },
+  {
+    title: "Yummi - Food & More",
+    imageUrl: ImageYummi,
+    description:
+      "A restaurant website built with Next.js and Payload CMS, allowing admins to easily update menu items, images, text, and more through a flexible and user-friendly admin panel.",
+    liveUrl: "https://restaurant-website-six-phi.vercel.app/",
+    githubUrl:"https://github.com/Beginnerds/restaurant-website"
   },
   {
     title: "Byte Bloom",

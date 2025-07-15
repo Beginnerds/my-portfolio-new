@@ -21,7 +21,7 @@ const Card: React.FC<CardProps> = ({ data }) => {
         <img
           src={data.imageUrl}
           alt={data.title}
-          className="h-full w-full object-cover "
+          className="h-full w-full object-fill "
         />
       </div>
       <p className="my-4 text-lg font-bold tracking-wide leading-7 ">
