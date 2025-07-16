@@ -220,7 +220,7 @@ const Skills = () => {
             variants={containerVariants}
             className="mt-8 w-full flex justify-center items-center flex-wrap gap-8"
           >
-            {icons2.map((item, i) => (
+            {icons2.map((item) => (
               <motion.span
                 variants={iconsVariants}
                 title={item.title}
