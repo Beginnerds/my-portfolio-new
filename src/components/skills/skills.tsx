@@ -16,7 +16,7 @@ import AWSIcon from "../../assets/icon_aws.svg";
 import FirebaseIcon from "../../assets/icon_firebase.svg";
 
 import "./skills.css";
-import { AnimationProps, motion } from "motion/react";
+import { MotionProps, motion } from "motion/react";
 
 type Icon = {
   title: string;
@@ -94,7 +94,7 @@ const icons2: Icon[] = [
 ];
 
 const Skills = () => {
-  const containerVariants: AnimationProps["variants"] = {
+  const containerVariants: MotionProps["variants"] = {
     initial: {
       opacity: 0,
     },
@@ -106,7 +106,7 @@ const Skills = () => {
     },
   };
 
-  const headingVariants: AnimationProps["variants"] = {
+  const headingVariants: MotionProps["variants"] = {
     initial: {
       opacity: 0,
       y: 20,
@@ -117,7 +117,7 @@ const Skills = () => {
     },
   };
 
-  const iconContainerOneVariants: AnimationProps["variants"] = {
+  const iconContainerOneVariants: MotionProps["variants"] = {
     initial: {
       opacity: 0,
       z: 50,
@@ -134,7 +134,7 @@ const Skills = () => {
       },
     },
   };
-  const iconContainerTwoVariants: AnimationProps["variants"] = {
+  const iconContainerTwoVariants: MotionProps["variants"] = {
     initial: {
       opacity: 0,
       z: 50,
@@ -149,7 +149,7 @@ const Skills = () => {
     },
   };
 
-  const iconsVariants: AnimationProps["variants"] = {
+  const iconsVariants: MotionProps["variants"] = {
     initial: {
       opacity: 0,
       x: -10,

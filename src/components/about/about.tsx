@@ -1,7 +1,7 @@
-import { AnimationProps, motion } from "motion/react";
+import { MotionProps, motion } from "motion/react";
 
 const About = () => {
-  const containerVariants: AnimationProps["variants"] = {
+  const containerVariants: MotionProps["variants"] = {
     initial: {
       opacity: 0,
     },
@@ -13,7 +13,7 @@ const About = () => {
     },
   };
 
-  const descriptionVariants: AnimationProps["variants"] = {
+  const descriptionVariants: MotionProps["variants"] = {
     initial: {
       opacity: 0,
       x: -20,
@@ -23,7 +23,7 @@ const About = () => {
       x: 0,
     },
   };
-  const headingVariants: AnimationProps["variants"] = {
+  const headingVariants: MotionProps["variants"] = {
     initial: {
       opacity: 0,
       y: 20,
@@ -33,7 +33,7 @@ const About = () => {
       y: 0,
     },
   };
-  const ctaVariants: AnimationProps["variants"] = {
+  const ctaVariants: MotionProps["variants"] = {
     initial: {
       opacity: 0,
       scale: 0,

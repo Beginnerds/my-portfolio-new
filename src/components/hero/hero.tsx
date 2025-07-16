@@ -1,4 +1,4 @@
-import { AnimationProps, motion } from "motion/react";
+import { MotionProps, motion } from "motion/react";
 import MyPicture from "../../assets/me.webp";
 import "./hero.css";
 import { useState } from "react";
@@ -6,7 +6,7 @@ import { useState } from "react";
 const Hero = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
-  const sectionOneVariants: AnimationProps["variants"] = {
+  const sectionOneVariants: MotionProps["variants"] = {
     hidden: {
       x: -50,
       opacity: 0,
@@ -25,7 +25,7 @@ const Hero = () => {
     },
   };
 
-  const labelVariants: AnimationProps["variants"] = {
+  const labelVariants: MotionProps["variants"] = {
     hidden: {
       x: -10,
       opacity: 0,
@@ -35,7 +35,7 @@ const Hero = () => {
       opacity: 1,
     },
   };
-  const nameVariants: AnimationProps["variants"] = {
+  const nameVariants: MotionProps["variants"] = {
     hidden: {
       y: 10,
       opacity: 0,
@@ -45,7 +45,7 @@ const Hero = () => {
       opacity: 1,
     },
   };
-  const roleVariants: AnimationProps["variants"] = {
+  const roleVariants: MotionProps["variants"] = {
     hidden: {
       y: -10,
       opacity: 0,
@@ -68,7 +68,7 @@ const Hero = () => {
       },
     },
   };
-  const descriptionVariants: AnimationProps["variants"] = {
+  const descriptionVariants: MotionProps["variants"] = {
     hidden: {
       opacity: 0,
     },
@@ -77,7 +77,7 @@ const Hero = () => {
     },
   };
 
-  const ctaVariants: AnimationProps["variants"] = {
+  const ctaVariants: MotionProps["variants"] = {
     hidden: {
       opacity: 0,
       scale: 5,

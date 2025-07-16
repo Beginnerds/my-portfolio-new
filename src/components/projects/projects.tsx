@@ -1,4 +1,4 @@
-import { AnimationProps, motion } from "motion/react";
+import { MotionProps, motion } from "motion/react";
 import Card, { CardProps } from "./card";
 
 import ImageNB from "../../assets/thumb_nb.webp";
@@ -59,7 +59,7 @@ const projectData: CardProps["data"][] = [
 ];
 
 const Projects = () => {
-  const containerVariants: AnimationProps["variants"] = {
+  const containerVariants: MotionProps["variants"] = {
     initial: {
       opacity: 0,
     },
@@ -71,7 +71,7 @@ const Projects = () => {
     },
   };
 
-  const headingVariants: AnimationProps["variants"] = {
+  const headingVariants: MotionProps["variants"] = {
     initial: {
       opacity: 0,
       y: 20,
@@ -82,7 +82,7 @@ const Projects = () => {
     },
   };
 
-  const cardContainerVariants: AnimationProps["variants"] = {
+  const cardContainerVariants: MotionProps["variants"] = {
     initial: {
       opacity: 0,
     },
@@ -93,7 +93,7 @@ const Projects = () => {
       },
     },
   };
-  const cardVariants: AnimationProps["variants"] = {
+  const cardVariants: MotionProps["variants"] = {
     initial: {
       opacity: 0,
       x: -30,
